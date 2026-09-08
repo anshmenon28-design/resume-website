@@ -1,44 +1,46 @@
-/* Compact, professional CSS for Ansh Menon's resume website */
+/* Warm yellow, grey and leather-green theme for Ansh Menon's resume */
 
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.6;
-    color: #243447;
-    background-color: #f4f1ea;
+    color: #3f4038;
+    background-color: #e7e3d8;
 }
 
-/* Compact header: no sticky positioning */
+/* Compact header */
 header {
     text-align: center;
-    padding: 18px 20px 16px;
-    background-color: #17324d;
-    color: #ffffff;
-    border-bottom: 4px solid #d6a84f;
+    padding: 22px 20px 18px;
+    background-color: #3f4a2f; /* leather green */
+    color: #fff8dc;
+    border-bottom: 5px solid #f2c94c; /* warm yellow */
 }
 
 header img {
-    width: 120px;
-    height: 120px;
+    width: 125px;
+    height: 125px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 5px solid #f2c94c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 h1 {
-    margin: 8px 0 2px;
-    font-size: 2rem;
+    margin: 10px 0 3px;
+    font-size: 2.15rem;
+    letter-spacing: 0.02em;
 }
 
 h2 {
     margin-top: 0;
-    color: #17324d;
+    color: #4b552f;
     font-size: 1.7rem;
 }
 
 h3 {
-    color: #395f7a;
+    color: #59633e;
 }
 
 p {
@@ -46,31 +48,34 @@ p {
 }
 
 a {
-    color: #17324d;
+    color: #4b552f;
     text-decoration: none;
 }
 
 /* Class selector */
 .tagline {
-    margin: 4px 0 12px;
+    margin: 4px 0 14px;
     font-size: 1rem;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.025em;
+    color: #f5e7a8;
 }
 
-/* Navigation: display + spacing */
+/* Navigation */
 nav a {
     display: inline-block;
-    margin: 3px 2px;
-    padding: 7px 13px;
-    color: #ffffff;
-    border: 1px solid #8fb1c7;
-    border-radius: 20px;
+    margin: 4px 3px;
+    padding: 8px 15px;
+    color: #3f4038;
+    background-color: #f2c94c;
+    border: 2px solid #f2c94c;
+    border-radius: 22px;
+    font-weight: bold;
 }
 
-/* Hover pseudo-selector */
 nav a:hover {
-    background-color: #d6a84f;
-    color: #17324d;
+    background-color: #fff4bf;
+    border-color: #fff4bf;
+    color: #3f4a2f;
 }
 
 /* ID selectors */
@@ -82,31 +87,37 @@ nav a:hover {
 #contact {
     width: min(900px, 88%);
     margin: 24px auto;
-    padding: 26px;
-    background-color: #ffffff;
-    border: 1px solid #d9e0e6;
+    padding: 28px;
+    background-color: #f7f5ee;
+    border: 1px solid #b8b6aa;
+    border-top: 6px solid #d8b12f;
     border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(36, 52, 71, 0.08);
+    box-shadow: 0 7px 18px rgba(63, 64, 56, 0.10);
     box-sizing: border-box;
 }
 
-/* Card-style sections */
+/* Feature / card sections */
 article {
     display: inline-block;
     vertical-align: top;
     width: calc(50% - 18px);
     box-sizing: border-box;
     margin: 8px;
-    padding: 18px;
-    background-color: #f8fafb;
-    border-left: 5px solid #d6a84f;
+    padding: 19px;
+    background-color: #ece9df;
+    border: 1px solid #bbb8ab;
+    border-left: 6px solid #6a7443;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(63, 64, 56, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 article:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(63, 64, 56, 0.12);
 }
 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -117,12 +128,16 @@ th,
 td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #d9e0e6;
+    border: 1px solid #bbb8ab;
 }
 
 th {
-    background-color: #17324d;
-    color: #ffffff;
+    background-color: #6a7443;
+    color: #fff8dc;
+}
+
+tr:nth-child(even) {
+    background-color: #eeece4;
 }
 
 ul {
@@ -132,11 +147,11 @@ ul {
 footer {
     padding: 20px;
     text-align: center;
-    background-color: #17324d;
-    color: #ffffff;
+    background-color: #3f4a2f;
+    color: #f5e7a8;
+    border-top: 4px solid #f2c94c;
 }
 
-/* Responsive layout */
 @media (max-width: 700px) {
     article {
         display: block;
@@ -156,6 +171,6 @@ footer {
 
     nav a {
         margin: 3px 1px;
-        padding: 6px 10px;
+        padding: 7px 10px;
     }
 }
